@@ -1,0 +1,23 @@
+{
+  "name": "doesangue.me",
+  "version": "1.0.0",
+  "description": "online platform that connect blood donors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/doesangueorg/doesangue.me.git"
+  },
+  "keywords": [
+    "opensource",
+    "donors"
+  ],
+  "author": "José Cage <josejanuario7@gmail.com> (https://josecage.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/doesangueorg/doesangue.me/issues"
+  },
+  "homepage": "https://github.com/doesangueorg/doesangue.me#readme"
+}
