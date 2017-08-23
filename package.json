@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/doesangueorg/doesangue.me.git"
+    "url": "git+ssh://git@github.com/doesangueorg/doesangueorg.github.io.git"
   },
   "keywords": [
     "opensource",
@@ -17,7 +17,15 @@
   "author": "José Cage <josejanuario7@gmail.com> (https://josecage.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/doesangueorg/doesangue.me/issues"
+    "url": "https://github.com/doesangueorg/doesangueorg.github.io/issues"
   },
-  "homepage": "https://github.com/doesangueorg/doesangue.me#readme"
+  "homepage": "https://github.com/doesangueorg/doesangueorg.github.io#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-connect": "^5.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-sass": "^3.1.0"
+  }
 }
