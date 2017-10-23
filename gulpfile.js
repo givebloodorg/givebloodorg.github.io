@@ -8,7 +8,7 @@ var gulpConnect = require('gulp-connect');
 gulp.task('webserver', function(){
   gulpConnect.server({
     livereload: true,
-    port: '4000'
+    port: '4000',
     root: '.'
   });
 });
@@ -21,7 +21,7 @@ gulp.task('assets', function() {
 // Task: Styles
 gulp.task('styles', function () {
    return gulp.src('assets/sass/**/*.scss')
-    .pipe(sass({outputStyle: 'compressed'})on('error', sass.logError))
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest('build/css/doesangue.css'))
     .pipe(gulpConnect.reload());
 });
@@ -43,4 +43,4 @@ gulp.task('watch', function() {
    gulp.watch('assets/images/**/*{.png,jpg,svg,gif}', ['images'])
 });
 
-gulp.task('default', ['assets', 'watch']);
+gulp.task('default', ['assets', 'watch', 'webserver']);
