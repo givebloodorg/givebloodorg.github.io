@@ -6,9 +6,8 @@ This webpage we will use for "**MVP**" campaign, where we plan to acquire new me
 
 Instructions to use the project:
 
-##
-	Follow this steps and run the commands bellow in your terminal (Linux) or cmd (Windows):
-##
+## Follow this steps and run the commands bellow in your terminal (Linux) or cmd (Windows):
+
 	It's necessary to have **node.js** in your machine: [Node js](https://nodejs.org/en/)
 	
 	1. git clone https://github.com/doesangueorg/doesangueorg.github.io.git
