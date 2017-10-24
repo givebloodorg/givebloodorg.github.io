@@ -43,7 +43,7 @@ gulp.task("sass", ['cache:css'], function() {
 
 /* Task minify html */
 gulp.task("html", ['cache:html'], function() {
-  return gulp.src(".source/index.html")
+  return gulp.src("source/index.html")
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest("build"))
         .pipe(browserSync.stream());
@@ -67,18 +67,18 @@ gulp.task("js", ['cache:js'], function() {
 /* Task concat js */
 gulp.task("concat-js", function() {
   return gulp.src([
-          './src/components/jquery/build/jquery.js',
-          './src/components/tether/build/js/tether.js',
-          './src/components/bootstrap/build/js/bootstrap.js'
+          'node_modules/jquery/dist/jquery.js',
+          'node_modules/tether/dist/js/tether.js',
+          'node_modules/bootstrap/dist/js/bootstrap.js'
         ])
-        .pipe(concat("main.js"))
-        .pipe(uglify())
+        //.pipe(concat("main.js"))
+        //.pipe(uglify())
         .pipe(gulp.dest("build/js"))
 });
 
 /*Task move fonts to font awesome*/
 gulp.task("move-fonts", function(){
-  return gulp.src('source/components/font-awesome/fonts/**')
+  return gulp.src('node_modules/font-awesome/fonts/**')
        .pipe(gulp.dest("build/fonts"))
 });
 
@@ -86,13 +86,13 @@ gulp.task("move-fonts", function(){
 gulp.task("server", function() {
   browserSync.init({
     server: {
-      baseDir: "build"
+      baseDir: "build/"
     }
   });
 
   /* Watch */
   gulp.watch("source/scss/**/*.scss", ['sass']);
-  gulp.watch("source/components/bootstrap/scss/**/*.scss", ['sass']);
+  gulp.watch("node_modules/bootstrap/scss/**/*.scss", ['sass']);
   gulp.watch("source/js/**/*.js", ['js']);
   gulp.watch("source/index.html", ['html']);
 });
