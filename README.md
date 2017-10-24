@@ -6,7 +6,6 @@ This webpage we will use for "**MVP**" campaign, where we plan to acquire new me
 
 Instructions to use the project:
 
-
 ## Running the project
 Follow this steps and run the commands bellow in your terminal (Linux) or cmd (Windows):
 
