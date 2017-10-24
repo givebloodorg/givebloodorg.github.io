@@ -8,7 +8,7 @@ Instructions to use the project:
 
 ## Follow this steps and run the commands bellow in your terminal (Linux) or cmd (Windows): ##
 
-	It's necessary to have **node.js** in your machine: <a href="https://nodejs.org/en/">Node js</a>
+	It's necessary to have **node.js** in your machine: https://nodejs.org/en/
 	
 	1. git clone https://github.com/doesangueorg/doesangueorg.github.io.git
 	2. <code>npm install</code> (to install the node_modules path)
