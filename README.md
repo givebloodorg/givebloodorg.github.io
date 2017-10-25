@@ -14,3 +14,4 @@ It's necessary to have [node.js](https://nodejs.org/en/) in your machine:
   1. `git clone https://github.com/doesangueorg/doesangueorg.github.io.git`
   2. `npm install` (to install the node_modules path)
   3. run the command `gulp` in your terminal/cmd
+  
