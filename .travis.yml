@@ -16,7 +16,7 @@ before_script:
   - npm install -g gulp-cli
 
 script:
-  - gulp imagemin && gulp sass && gulp html && gulp jshint && gulp concat-js && gulpmove-fonts
+  - gulp imagemin && gulp sass && gulp html && gulp jshint && gulp concat-js && gulp move-fonts
 
 deploy:
   provider: pages
