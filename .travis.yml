@@ -1,7 +1,6 @@
 language: node_js
 node_js:
   - "7"
-  - "8"
 
 cache:
   directories:
@@ -17,7 +16,7 @@ before_script:
   - npm install -g gulp-cli
 
 script:
-  - gulp imagemin && gulp sass && gulp html && gulp jshint && gulp jsconcat-js && gulpmove-fonts
+  - gulp imagemin && gulp sass && gulp html && gulp jshint && gulp concat-js && gulpmove-fonts
 
 deploy:
   provider: pages
