@@ -71,8 +71,8 @@ gulp.task("concat-js", function() {
           'node_modules/tether/dist/js/tether.js',
           'node_modules/bootstrap/dist/js/bootstrap.js'
         ])
-        //.pipe(concat("main.js"))
-        //.pipe(uglify())
+        .pipe(concat("main.js"))
+        .pipe(uglify())
         .pipe(gulp.dest("build/js"))
 });
 
