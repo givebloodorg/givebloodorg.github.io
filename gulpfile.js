@@ -21,7 +21,7 @@ gulp.task("cache:js", function() {
 });
 
 gulp.task("cache:html", function(){
-  del("build/index.html")
+  del("./index.html")
 });
 
 /*Task minfy PNG, JPEG, GIF and SVG images*/
@@ -45,7 +45,7 @@ gulp.task("sass", ['cache:css'], function() {
 gulp.task("html", ['cache:html'], function() {
   return gulp.src("source/index.html")
         .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest("build"))
+        .pipe(gulp.dest("./"))
         .pipe(browserSync.stream());
 });
 
@@ -86,7 +86,7 @@ gulp.task("move-fonts", function(){
 gulp.task("server", function() {
   browserSync.init({
     server: {
-      baseDir: "build/"
+      baseDir: "./"
     }
   });
 
