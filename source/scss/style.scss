@@ -1,6 +1,6 @@
 @import "./node_modules/bootstrap/scss/bootstrap";
 @import "./node_modules/font-awesome/scss/font-awesome";
-@import "https://fonts.googleapis.com/css?family=Quicksand";
+@import "https://fonts.googleapis.com/css?family=Abel|Quicksand";
 @import "_placeholder";
 @import "_custom-mixins";
 
@@ -23,6 +23,7 @@ body{
 	.logo{
 
 		display: flex;
+		font-size: 1.3em;
 	
 		.title{
 		
@@ -40,7 +41,7 @@ body{
 	.nav-bars{
 
 		position: fixed;
-		top: 10px;
+		top: 16px;
 		right: 10px;
 		font-size: 1.3em;
 	}	
@@ -48,9 +49,51 @@ body{
 
 //call
 .call{
-	
-	height: 100vh;
-	background-color: #ecf0f1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 95vh;
+	background-color: #2ecc71;
+}
+
+.call-description{
+
+	width: 600px;
+	text-align: center;
+
+	.title{
+
+		font-family: 'Abel', sans-serif;
+		font-size: 3.28em;
+		text-transform: uppercase;
+		line-height: 1.1em;
+		letter-spacing: .1em;
+
+		@include media-breakpoint-up(md) {
+			
+			font-size: 5.28em;
+		}
+	}
+
+	.subtitle{
+
+		@include media-breakpoint-up(md) {
+			
+			font-size: 1.5em;
+		}
+	}
+
+	.mod-btn-call{
+
+		cursor: pointer;
+
+		@include media-breakpoint-up(md) {
+			
+			font-size: 1.8em;
+			padding: .3em .6em;
+		}
+	}
 }
 
 //menu-offcanvas
