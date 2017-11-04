@@ -2,3 +2,5 @@ node_modules/
 *.log
 *.lock
 #build/
+doesangue.sublime-project
+doesangue.sublime-workspace

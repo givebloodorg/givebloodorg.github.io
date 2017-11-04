@@ -32,3 +32,6 @@ ativaScrollSuave('a[href*=servicos]');
 ativaScrollSuave('a[href*=fotos]');
 ativaScrollSuave('a[href*=contato]');
 */
+
+//carousel
+$('.carousel').carousel();
