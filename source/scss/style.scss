@@ -28,9 +28,9 @@ body{
 
 		display: flex;
 		font-size: 1.3em;
-	
+
 		.title{
-		
+
 			font-size: 1.5em;
 			text-transform: capitalize;
 		}
@@ -43,11 +43,11 @@ body{
 	}
 
 	.nav-bars{
-		position: absolute;
-		top: 14px;
+		position: fixed;
+		top: 16px;
 		right: 10px;
 		font-size: 1.3em;
-	}	
+	}
 }
 
 //call
@@ -73,7 +73,7 @@ body{
 		letter-spacing: .1em;
 
 		@include media-breakpoint-up(md) {
-			
+
 			font-size: 4em;
 		}
 	}
@@ -81,7 +81,7 @@ body{
 	.subtitle{
 
 		@include media-breakpoint-up(md) {
-			
+
 			font-size: 1.2em;
 		}
 	}
@@ -91,7 +91,46 @@ body{
 		cursor: pointer;
 
 		@include media-breakpoint-up(md) {
-			
+
+			font-size: 1.5em;
+			padding: .3em .6em;
+		}
+	}
+}
+
+.call-description{
+
+	width: 100%;
+	text-align: center;
+
+	.title{
+
+		font-family: 'Abel', sans-serif;
+		font-size: 3.28em;
+		text-transform: uppercase;
+		line-height: 1.1em;
+		letter-spacing: .1em;
+
+		@include media-breakpoint-up(md) {
+
+			font-size: 4em;
+		}
+	}
+
+	.subtitle{
+
+		@include media-breakpoint-up(md) {
+
+			font-size: 1.2em;
+		}
+	}
+
+	.mod-btn-call{
+
+		cursor: pointer;
+
+		@include media-breakpoint-up(md) {
+
 			font-size: 1.5em;
 			padding: .3em .6em;
 		}
@@ -100,7 +139,7 @@ body{
 
 //menu-offcanvas
 .menu-offcanvas{
-	
+
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -114,7 +153,7 @@ body{
 	background-color: #fff;
 
 	@include media-breakpoint-up(md) {
-		
+
 		width: 20%;
 	}
 
@@ -124,7 +163,7 @@ body{
 			justify-content: center;
 			margin-top: 6rem;
 			color: #e74c3c;
-			
+
 		.mod-heart{
 
 			font-size: 2em;
@@ -132,10 +171,10 @@ body{
 		}
 
 		.title{
-			
+
 			font-size: 1.5rem;
 			text-align: center;
-			text-transform: capitalize;				
+			text-transform: capitalize;
 		}
 	}
 }
@@ -155,7 +194,7 @@ body{
 	}
 
 	&:after{
-			
+
 		content: "";
 		position: fixed;
 		top: 0;
@@ -190,12 +229,12 @@ body{
 		padding: 8px;
 
 		&:hover{
-			
+
 			background-color: #ecf0f1;
 		}
 
 		a{
-			
+
 			display: list-item;
 			padding: 3px;
 			text-decoration: none;
@@ -205,7 +244,7 @@ body{
 		}
 
 		&:hover a{
-			
+
 			color: #000;
 		}
 
@@ -219,18 +258,18 @@ body{
 
 //social-media-nav
 .social-media-nav{
-	
+
 	display: flex;
 	justify-content: center;
-	
+
 	.link-social-media-nav{
-		
+
 		margin: 3px;
 		text-decoration: none;
 		color: #e74c3c;
 
 		&:hover{
-			
+
 			color: lighten(#e74c3c, 10%);
 		}
 
