@@ -59,7 +59,7 @@ body{
 
 .call-description{
 
-	width: 600px;
+	width: 100%;
 	text-align: center;
 
 	.title{
@@ -72,7 +72,7 @@ body{
 
 		@include media-breakpoint-up(md) {
 			
-			font-size: 5.28em;
+			font-size: 4em;
 		}
 	}
 
@@ -80,7 +80,7 @@ body{
 
 		@include media-breakpoint-up(md) {
 			
-			font-size: 1.5em;
+			font-size: 1.2em;
 		}
 	}
 
@@ -90,7 +90,7 @@ body{
 
 		@include media-breakpoint-up(md) {
 			
-			font-size: 1.8em;
+			font-size: 1.5em;
 			padding: .3em .6em;
 		}
 	}
