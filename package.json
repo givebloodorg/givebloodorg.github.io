@@ -16,8 +16,7 @@
   },
   "homepage": "https://github.com/doesangueorg/doesangueorg.github.io#readme",
   "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-install": "^1.1.0"
+    "gulp": "^3.9.1"
   },
   "devDependencies": {
     "bootstrap": "^4.0.0-alpha.6",
