@@ -16,7 +16,11 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 10px 0;
+	padding: 10px 1px;
+	position:fixed;
+	background-color: #fff;
+	width:100%;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.4);
 
 	color: #e74c3c;
 
@@ -39,9 +43,8 @@ body{
 	}
 
 	.nav-bars{
-
-		position: fixed;
-		top: 16px;
+		position: absolute;
+		top: 14px;
 		right: 10px;
 		font-size: 1.3em;
 	}	
@@ -52,9 +55,8 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	height: 95vh;
-	background-color: #2ecc71;
+	height: 100vh;
+	background-color: #ecf0f1;
 }
 
 .call-description{
