@@ -20,6 +20,7 @@ body{
 	position:fixed;
 	background-color: #fff;
 	width:100%;
+	z-index:2;
 	box-shadow: 1px 1px 1px rgba(0,0,0,.4);
 
 	color: #e74c3c;
@@ -41,10 +42,9 @@ body{
 			margin-right: 5px;
 		}
 	}
-
 	.nav-bars{
-		position: fixed;
-		top: 16px;
+		position: absolute;
+		top: 14px;
 		right: 10px;
 		font-size: 1.3em;
 	}
@@ -89,7 +89,6 @@ body{
 	.mod-btn-call{
 
 		cursor: pointer;
-
 		@include media-breakpoint-up(md) {
 
 			font-size: 1.5em;
@@ -117,6 +116,13 @@ body{
 		}
 	}
 
+	.btn-danger{
+		background-color: #e74c3c !important;
+		
+		&:hover{
+			background-color: rgb(220, 53, 69) !important;
+		}
+	}
 	.subtitle{
 
 		@include media-breakpoint-up(md) {
@@ -134,6 +140,34 @@ body{
 			font-size: 1.5em;
 			padding: .3em .6em;
 		}
+	}
+}
+
+//What
+.what{
+	width:100%;
+	height:80vh;
+	position: relative;
+	background-color: #fff;
+	text-align:center;
+	box-sizing:border-border;
+	padding:10vh;
+
+	h2{
+		text-transform: uppercase;
+	}
+	.fa{
+		font-size: 12vw;
+		color: #e74c3c;
+		margin-bottom:2vh;
+	}
+	.image{
+		border-radius:50%;
+		height: auto;
+		margin-bottom:1vh;
+	}
+	.content{
+		font-size: 1.3vw;
 	}
 }
 
