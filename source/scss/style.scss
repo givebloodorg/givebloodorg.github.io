@@ -89,9 +89,6 @@ body{
 	.mod-btn-call{
 
 		cursor: pointer;
-
-	height: 100vh;
-	background-color: #ecf0f1;
 		@include media-breakpoint-up(md) {
 
 			font-size: 1.5em;
