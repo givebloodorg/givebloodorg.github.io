@@ -1,6 +1,13 @@
-nav.navbar
+nav.navbar.navbar-expand-md
     a(href="#").navbar-brand
         span.fa.fa-heartbeat.fa-2x
         span.navbar-brand-name Doe Sangue
+
+    .collapse.navbar-collapse#navbarCollapse
+        ul.nav.mr-auto
+            li.nav-item
+                a(href="#").nav-link Explorar
+            li.nav-item
+                a(href="#").nav-link Descarregar aplicativo
 
     include components/humburguer
