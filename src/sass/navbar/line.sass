@@ -1,0 +1,27 @@
+.humburguer
+    .line
+        background-color: $grey
+        height: 2px
+        width: 25px
+        display: block
+        margin: 4px 0
+        transition: $global_transition_time
+
+// These styles will be applied
+// when the header is `.active`
+.navbar.active .humburguer
+    // When `.header` is `active`
+    // we provide a background to each `.line`
+    &:hover .line
+        background: darken($grey, 10%)
+
+    // `.line-[0,2] rotate animation
+    .line-0
+        transform: translateY(6px) rotateZ(135deg)
+    .line-2
+        transform: translateY(-6px) rotateZ(-135deg)
+
+    // `.line-1` hide animation
+    .line-1
+        opacity: 0
+        width: 0
