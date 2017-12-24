@@ -1,6 +1,43 @@
 .hero
-    height: inherit
-    margin-top: -70px
+    .hero-title
+        font-weight: bold
 
-    .container, .vertical-align
+    .or
+        text-align: center
+        margin-top: 1rem
+
+    .form-group
+        .form-control
+            background-color: #f8f8f8
+            border-color: $separator-color
+
+            &:focus
+                background-color: white
+
+        /*&::after
+            width: 100%
+            height: 1px
+            background: $separator-color*/
+
+    @media only screen and (max-width: 767px)
+        text-align: center
+        padding-top: 35px
+        padding-bottom: 35px
+
+        .hero-title
+            font-size: 1.5em
+
+    @media only screen and (min-width: 768px)
         height: inherit
+
+        .container, .vertical-align
+            height: inherit
+
+        .row
+            margin-top: -70px
+
+        .cta, .content
+            padding: 0 60px
+
+        .content
+            border-right: 1px solid $separator-color
