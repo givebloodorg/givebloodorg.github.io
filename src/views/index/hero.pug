@@ -1,9 +1,26 @@
-.container
-    .hero.row
-        .col-md-6
-            h1
-                |Doe sangue, e salve até 4 pessoas.
-                br
-                |A solidariedade dá-lhe as boas-vindas.
-            p A doação de sangue é um processo seguro, que não oferece riscos ao doador e que normalmente dura entre 10 e 12 minutos
-        .col-md-6
+.hero
+    .container
+        .vertical-align
+            .vertical-wrapper
+                .row
+                    .col-md-6
+                        h1
+                            |Doe sangue, e salve até 4 pessoas.
+                            br
+                            |A solidariedade dá-lhe as boas-vindas.
+                        p A doação de sangue é um processo seguro, que não oferece riscos ao doador e que normalmente dura entre 10 e 12 minutos.
+
+                        a(href="#").btn.btn-primary Quero doar sangue (Este botão não está certo)
+                    .col-md-6
+                        form.form
+                            a(href="#").btn.btn-outline-primary.form-control Abra uma conta gratuitamente com Facebook
+                            br
+                            |ou
+                            br
+                            input(name="email", type="email", placeholder="E-mail", required="required").form-control
+                            input(name="password", type="password", placeholder="Senha", required="required").form-control
+
+                            p Termos e condições, se necessário, cenas de privacidade, etc.
+
+                            button.btn.btn-primary.form-control Criar conta gratuitamente
+
