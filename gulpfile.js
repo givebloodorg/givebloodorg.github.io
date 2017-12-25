@@ -31,3 +31,10 @@ gulp.task('sass', function(){
         }))
         .pipe(gulp.dest('./dist/css'))
 });
+
+gulp.task('bootstrap:build', function(){
+    return gulp.src('./src/bootstrap/scss/bootstrap.scss')
+        .pipe(plumber())
+        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(gulp.dest('./dist/css'))
+});
