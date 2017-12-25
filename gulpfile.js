@@ -57,4 +57,6 @@ gulp.task('run', function(){
         }))
 })
 
-gulp.task('default', ['pug', 'sass', 'js', 'bootstrap', 'run'])
+gulp.task('default', ['pug', 'sass', 'js', 'bootstrap', 'run'], function(){
+    console.log("If everything is ok, open: http://localhost:8000 in your browser to see the page.")
+})
