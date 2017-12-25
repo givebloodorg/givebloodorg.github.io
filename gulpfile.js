@@ -6,6 +6,7 @@ const
     autoprefixer = require('gulp-autoprefixer')
     uglify       = require('gulp-uglify')
     rename       = require('gulp-rename')
+    webserver    = require('gulp-webserver')
 
 gulp.task('pug', function(){
     return gulp.src('./src/views/*.pug')
@@ -49,4 +50,11 @@ gulp.task('bootstrap', function(){
         .pipe(gulp.dest('./dist/css'))
 });
 
-gulp.task('default', ['pug', 'sass', 'bootstrap'])
+gulp.task('run', function(){
+    gulp.src('./')
+        .pipe(webserver({
+            open: true
+        }))
+})
+
+gulp.task('default', ['pug', 'sass', 'js', 'bootstrap', 'run'])
