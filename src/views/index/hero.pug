@@ -12,14 +12,19 @@
 
                         //a(href="#").btn.btn-primary Quero doar sangue (Este botão não está certo)
 
-                    form.cta.col-sm-12.col-md-6                        
-                        a(href="#").btn.btn-outline-primary.form-control Abra uma conta gratuitamente com Facebook
+                    form#create-account-form.cta.col-sm-12.col-md-6(method="post")
+                        a#btn-create-acount-facebook.btn.btn-outline-primary.form-control(href="#")
+                            span.fa.fa-facebook
+                            |Abra uma conta gratuitamente com Facebook
                         p.or ou
                         .form-group
                             input(name="email", type="email", placeholder="E-mail", required="required").form-control
                         .form-group
                             input(name="password", type="password", placeholder="Senha", required="required").form-control
 
-                        p Termos e condições, se necessário, cenas de privacidade, etc.
+                        p
+                            |Ao criar a conta você concorda com os nossos 
+                            a(href="#") termos e condições
+                            |.
 
-                        button.btn.btn-primary.form-control Criar conta gratuitamente
+                        button#btn-create-acount.btn.btn-primary.form-control(form="create-account-form") Criar conta gratuitamente
