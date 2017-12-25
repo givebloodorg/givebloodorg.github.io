@@ -7,18 +7,17 @@
     "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "git+ssh://git@github.com/doesangueorg/doesangueorg.github.io.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/doesangueorg/doesangueorg.github.io.git"
+  },
   "keywords": [
     "opensource",
     "donors"
   ],
   "author": "José Cage <josejanuario7@gmail.com> (https://josecage.com)",
   "contributors": [
-    {
-      "name": "Eleandro Duzentos (e200)",
-      "email": "eleandro@inbox.ru",
-      "url": "https://e200.github.io"
-    }
+    "Eleandro Duzentos <eleandro@inbox.ru> (https://e200.github.io)"
   ],
   "license": "MIT",
   "bugs": {
