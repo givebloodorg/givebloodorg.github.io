@@ -7,12 +7,21 @@
     box-shadow: 0 0 4px $grey
     z-index: 999
 
-    .fa-heartbeat
-        vertical-align: middle
-        margin-right: 10px
+#page-brand-icon
+    vertical-align: middle
+    margin-right: 10px
 
-.navbar-brand
-    //color: $primary
+// Its necessary because it provides unniformity
+// with others elements like the humburguer
+// and the page brand.
+
+// Try remove to see the differense.
+#navbar-left, #navbar-right
+    text-transform: uppercase
+
+// 
+#navbar-right
+    margin-right: 62px
 
 @import 'navbar/humburguer'
 @import 'navbar/menu'
