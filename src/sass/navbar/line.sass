@@ -1,10 +1,11 @@
 .humburguer
     .line
-        background-color: $grey
-        height: 2px
-        width: 25px
         display: block
-        margin: 4px 0
+        background-color: $grey
+        height: $humburguer-line-height
+        width: $humburguer-line-width
+        margin-top: $humburguer-line-margin-y
+        margin-bottom: $humburguer-line-margin-y
         transition: $global-transition-time
 
 // These styles will be applied
@@ -17,9 +18,9 @@
 
     // `.line-[0,2] rotate animation
     .line-0
-        transform: translateY(6px) rotateZ(135deg)
+        transform: translateY($humburguer-line-translate) rotateZ($humburguer-line-rotate-deg)
     .line-2
-        transform: translateY(-6px) rotateZ(-135deg)
+        transform: translateY(-$humburguer-line-translate) rotateZ(-$humburguer-line-rotate-deg)
 
     // `.line-1` hide animation
     .line-1
