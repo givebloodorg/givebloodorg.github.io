@@ -3,11 +3,63 @@ nav.navbar.navbar-expand-md
         span.fa.fa-heartbeat.fa-2x
         span.navbar-brand-name Doe Sangue
 
-    #navbarCollapse.collapse.navbar-collapse
+    #navbar-left.collapse.navbar-collapse
         ul.nav.mr-auto
             li.nav-item
-                a(href="#").nav-link Explorar
+                a(href="#").nav-link.active Início
             li.nav-item
                 a(href="#").nav-link Descarregar aplicativo
 
-    include components/humburguer
+    #navbar-right
+        .collapse.navbar-collapse
+            ul.nav
+                li.nav-item
+                    a(href="#").nav-link Entrar
+
+    #overlay
+
+    // O texto da página foi ajustado para pt-PT
+    #nav-menu
+        ul.nav
+            li.nav-item.d-block.d-md-none
+                a(href="#").nav-link
+                    span.fa.fa-sign-in
+                    |Entrar
+            li.nav-item
+                a(href="#").nav-link.active
+                    span.fa.fa-home
+                    |Início
+            // Colocado nesta posição propositadamente
+            li.nav-item.d-block.d-md-none
+                a(href="#").nav-link
+                    span.fa.fa-mobile
+                    |Descarregar app
+            li.nav-item
+                a(href="#").nav-link
+                    span.fa.fa-users
+                    |Junte-se a nós
+            li.nav-item
+                a(href="#").nav-link
+                    span.fa.fa-heartbeat
+                    |Sobre nós
+            li.nav-item
+                a(href="#").nav-link
+                    span.fa.fa-heart
+                    |Nossa missão
+            li.nav-item
+                a(href="#").nav-link
+                    span.fa.fa-phone
+                    |Fale connosco
+
+        ul#social-media-nav.list-unstyled.text-center
+            li
+                a(href="#")
+                    span.fa.fa-2x.fa-facebook-square
+            li
+                a(href="#")
+                    span.fa.fa-2x.fa-twitter-square
+            li
+                a(href="#")
+                    span.fa.fa-2x.fa-github-square
+
+    include navbar/humburguer
