@@ -1,6 +1,6 @@
 {
   "name": "doesangue",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Online platform that connect blood donors",
   "scripts": {
     "gulp": "gulp",
@@ -27,5 +27,6 @@
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^3.0.0",
     "gulp-webserver": "^0.9.1"
-  }
+  },
+  "dependencies": {}
 }
