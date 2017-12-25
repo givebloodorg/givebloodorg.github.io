@@ -4,3 +4,4 @@ node_modules/
 #build/
 doesangue.sublime-project
 doesangue.sublime-workspace
+src/bootstrap/dist
