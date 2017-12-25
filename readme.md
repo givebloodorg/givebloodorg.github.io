@@ -9,6 +9,6 @@ This is the webpage used for the "**MVP**" campaign, where we plan to acquire ne
 ### Running the project
 
     npm install doesangue
-    gulp
+    npm run gulp
 
 You must have [node.js](https://nodejs.org/en/) in order to run the project.

@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "Online platform that connect blood donors",
   "scripts": {
+    "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "git+ssh://git@github.com/doesangueorg/doesangueorg.github.io.git",
