@@ -1,9 +1,9 @@
 .humburguer
-    position: fixed
     display: inline-block
-    top: (($navbar-height - 38px) / 2)
-    right: 26px
-    padding: 8px
-    z-index: 9999
+    position: fixed
+    top: (($navbar-height - ((($humburguer-line-height * 3) + (($humburguer-line-margin-y * 2) * 3)) + $humburguer-padding)) / 2)
+    right: $humburguer-right
+    padding: $humburguer-padding
+    z-index: $humburguer-z-index
 
 @import 'line'
