@@ -4,6 +4,7 @@ const
     pug          = require('gulp-pug')
     sass         = require('gulp-sass')
     autoprefixer = require('gulp-autoprefixer')
+    rename       = require('gulp-rename')
 
 gulp.task('pug', function(){
     return gulp.src('./src/views/*.pug')
@@ -32,9 +33,12 @@ gulp.task('sass', function(){
         .pipe(gulp.dest('./dist/css'))
 });
 
-gulp.task('bootstrap:build', function(){
-    return gulp.src('./src/bootstrap/scss/bootstrap.scss')
+gulp.task('bootstrap', function(){
+    return gulp.src('./src/bootstrap/override.scss')
         .pipe(plumber())
         .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(rename('bootstrap.css'))
         .pipe(gulp.dest('./dist/css'))
 });
+
+gulp.task('default', ['pug', 'sass', 'bootstrap'])

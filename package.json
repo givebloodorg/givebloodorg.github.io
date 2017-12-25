@@ -15,7 +15,10 @@
     "url": "https://github.com/doesangueorg/doesangueorg.github.io/issues"
   },
   "homepage": "https://github.com/doesangueorg/doesangueorg.github.io#readme",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "gulp-rename": "^1.2.2"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
