@@ -4,6 +4,7 @@ const
     pug          = require('gulp-pug')
     sass         = require('gulp-sass')
     autoprefixer = require('gulp-autoprefixer')
+    uglify       = require('gulp-uglify')
     rename       = require('gulp-rename')
 
 gulp.task('pug', function(){
@@ -31,6 +32,13 @@ gulp.task('sass', function(){
                 cascade: false,
         }))
         .pipe(gulp.dest('./dist/css'))
+});
+
+gulp.task('js', function(){
+    return gulp.src('./src/js/master.js')
+        .pipe(plumber())
+        .pipe(uglify())
+        .pipe(gulp.dest('./dist/js'))
 });
 
 gulp.task('bootstrap', function(){
