@@ -1,0 +1,45 @@
+#nav-menu, #overlay
+    position: fixed
+    top: 0
+    bottom: 0
+    right: 0
+    transition: $global-transition-time
+
+#overlay
+    display: none
+    left: 0
+    background: rgba(0, 0, 0, 0)
+    z-index: 9997
+
+#nav-menu
+    max-width: 200px
+    background: #fbfbfb
+    z-index: 9998
+    right: -100%
+    overflow-y: auto
+
+    .nav
+        margin-top: $navbar-height
+        
+        & > li
+            width: 100%
+            text-align: right
+            text-transform: uppercase
+
+            & > a
+                padding-right: 34px
+
+                & > .fa
+                    float: right
+                    margin-top: 4px
+
+.navbar.active
+    #overlay
+        background: rgba(0, 0, 0, .4)
+    #nav-menu
+        right: 0
+
+#social-media-nav li
+    display: inline-block
+    margin-top: 15px
+    padding: 10px
