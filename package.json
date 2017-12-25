@@ -1,7 +1,8 @@
 {
   "name": "doesangue",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Online platform that connect blood donors",
+  "main": "index.html",
   "scripts": {
     "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,6 +13,13 @@
     "donors"
   ],
   "author": "José Cage <josejanuario7@gmail.com> (https://josecage.com)",
+  "contributors": [
+    {
+      "name": "Eleandro Duzentos (e200)",
+      "email": "eleandro@inbox.ru",
+      "url": "https://e200.github.io"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/doesangueorg/doesangueorg.github.io/issues"
