@@ -1,0 +1,28 @@
+.humburguer
+    .line
+        display: block
+        background-color: $grey
+        height: $humburguer-line-height
+        width: $humburguer-line-width
+        margin-top: $humburguer-line-margin-y
+        margin-bottom: $humburguer-line-margin-y
+        transition: $global-transition-time
+
+// These styles will be applied
+// when the header is `.active`
+.navbar.active .humburguer
+    // When `.header` is `active`
+    // we provide a background to each `.line`
+    &:hover .line
+        background: darken($grey, 10%)
+
+    // `.line-[0,2] rotate animation
+    .line-0
+        transform: translateY($humburguer-line-translate) rotateZ($humburguer-line-rotate-deg)
+    .line-2
+        transform: translateY(-$humburguer-line-translate) rotateZ(-$humburguer-line-rotate-deg)
+
+    // `.line-1` hide animation
+    .line-1
+        opacity: 0
+        width: 0

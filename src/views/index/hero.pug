@@ -1,0 +1,31 @@
+.hero
+    .container
+        .vertical-align
+            .vertical-wrapper
+                .row
+                    .content.col-sm-12.col-md-6                        
+                        h1.hero-title
+                            |Doe sangue, e salve até 4 pessoas.
+                            br
+                            |A solidariedade dá-lhe as boas-vindas.
+                        p A doação de sangue é um processo seguro, que não oferece riscos ao doador e que normalmente dura entre 10 e 12 minutos.
+
+                        //a(href="#").btn.btn-primary Quero doar sangue (Este botão não está certo)
+
+                    form#create-account-form.cta.col-sm-12.col-md-6(method="post")
+                        a#btn-create-acount-facebook.btn.btn-outline-primary.form-control(href="#")
+                            span.fa.fa-facebook
+                            |Abra uma conta gratuitamente com Facebook
+                        p.or ou
+                        .form-group
+                            input(name="email", type="email", placeholder="E-mail", required="required").form-control
+                        .form-group
+                            input(name="password", type="password", placeholder="Senha", required="required").form-control
+
+                        p
+                            |Ao criar a conta você concorda com os nossos 
+                            a(href="#")#terms-and-condictions
+                                b termos e condições
+                            |.
+
+                        button#btn-create-acount.btn.btn-primary.form-control(form="create-account-form") Criar conta gratuitamente

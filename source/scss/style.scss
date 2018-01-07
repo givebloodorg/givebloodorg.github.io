@@ -16,12 +16,22 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+<<<<<<< HEAD
 	padding: 10px 1px;
 	position:fixed;
 	background-color: #fff;
 	width:100%;
 	z-index:2;
 	box-shadow: 1px 1px 1px rgba(0,0,0,.4);
+||||||| merged common ancestors
+	margin: 10px 0;
+=======
+	padding: 10px 1px;
+	position:fixed;
+	background-color: #fff;
+	width:100%;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.4);
+>>>>>>> e200-master
 
 	color: #e74c3c;
 
@@ -43,8 +53,17 @@ body{
 		}
 	}
 	.nav-bars{
+<<<<<<< HEAD
 		position: absolute;
 		top: 14px;
+||||||| merged common ancestors
+
+		position: fixed;
+		top: 16px;
+=======
+		position: fixed;
+		top: 16px;
+>>>>>>> e200-master
 		right: 10px;
 		font-size: 1.3em;
 	}
@@ -55,6 +74,7 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+<<<<<<< HEAD
 	height: 100vh;
 	background-color: #ecf0f1;
 }
@@ -90,11 +110,60 @@ body{
 
 		cursor: pointer;
 		@include media-breakpoint-up(md) {
+||||||| merged common ancestors
+=======
+	height: 100vh;
+	background-color: #ecf0f1;
+}
+
+.call-description{
+
+	width: 100%;
+	text-align: center;
+
+	.title{
+
+		font-family: 'Abel', sans-serif;
+		font-size: 3.28em;
+		text-transform: uppercase;
+		line-height: 1.1em;
+		letter-spacing: .1em;
+
+		@include media-breakpoint-up(md) {
+
+			font-size: 4em;
+		}
+	}
+
+	.subtitle{
+
+		@include media-breakpoint-up(md) {
+
+			font-size: 1.2em;
+		}
+	}
+
+	.mod-btn-call{
+
+		cursor: pointer;
+>>>>>>> e200-master
+
+<<<<<<< HEAD
+			font-size: 1.5em;
+			padding: .3em .6em;
+		}
+	}
+||||||| merged common ancestors
+	height: 95vh;
+	background-color: #2ecc71;
+=======
+		@include media-breakpoint-up(md) {
 
 			font-size: 1.5em;
 			padding: .3em .6em;
 		}
 	}
+>>>>>>> e200-master
 }
 
 .call-description{

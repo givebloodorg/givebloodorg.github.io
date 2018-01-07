@@ -1,40 +1,39 @@
 {
-  "name": "doesangue.me",
-  "description": "online platform that connect blood donors",
+  "name": "doesangue",
+  "version": "1.0.3",
+  "description": "Online platform that connect blood donors",
+  "main": "index.html",
   "scripts": {
+    "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "git+ssh://git@github.com/doesangueorg/doesangueorg.github.io.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/doesangueorg/doesangueorg.github.io.git"
+  },
   "keywords": [
     "opensource",
     "donors"
   ],
   "author": "José Cage <josejanuario7@gmail.com> (https://josecage.com)",
+  "contributors": [
+    "Eleandro Duzentos <eleandro@inbox.ru> (https://e200.github.io)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/doesangueorg/doesangueorg.github.io/issues"
   },
   "homepage": "https://github.com/doesangueorg/doesangueorg.github.io#readme",
-  "dependencies": {
-    "gulp": "^3.9.1"
-  },
   "devDependencies": {
-    "bootstrap": "^4.0.0-alpha.6",
-    "browser-sync": "^2.18.8",
-    "del": "^2.2.2",
-    "font-awesome": "^4.7.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-cssmin": "^0.2.0",
-    "gulp-htmlmin": "^3.0.0",
-    "gulp-imagemin": "^3.4.0",
-    "gulp-jshint": "^2.0.4",
-    "gulp-notify": "^3.0.0",
+    "gulp": "^3.9.1",
+    "bootstrap": "^4.0.0-beta.2",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^2.1.2",
-    "jquery": "^3.2.1",
-    "jshint": "^2.9.4",
-    "popper.js": "^1.12.3",
-    "run-sequence": "^1.2.2",
-    "tether": "^1.4.0"
-  }
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-webserver": "^0.9.1"
+  },
+  "dependencies": {}
 }
